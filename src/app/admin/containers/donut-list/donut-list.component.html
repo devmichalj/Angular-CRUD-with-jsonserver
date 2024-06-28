@@ -1,0 +1,20 @@
+<div>
+    <ng-container *ngIf="donuts.length; else nothing">
+        <app-donut-card
+            *ngFor="let donut of donuts; trackBy: trackById"
+            [donut]="donut">
+        </app-donut-card>
+    </ng-container>
+
+    <div
+        *ngFor="let donut of donuts; index as i; even as e; odd as o"
+        [style.color]="e ? 'green' : 'grey'">
+        {{ i }}
+        {{ e }}
+        {{ o }}
+    </div>
+
+    <ng-template #nothing>
+        <p>No Donuts here...</p>
+    </ng-template>
+</div>

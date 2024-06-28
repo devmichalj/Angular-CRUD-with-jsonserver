@@ -1,0 +1,17 @@
+<div class="donut-card">
+    <p class="donut-card-name">{{ donut.name }}</p>
+    <p class="donut-card-price">{{ donut.price / 100 | currency: 'USD' }}</p>
+    <p class="donut-card-description">{{ donut.description }}</p>
+
+    <ng-container [ngSwitch]="donut.promo">
+        <span *ngSwitchCase="'new'" class="donut-card-promo">NEW</span>
+        <span *ngSwitchCase="'limited'" class="donut-card-promo">LIMITED</span>
+    </ng-container>
+
+    <ng-container [ngSwitch]="donut.promo">
+        <span class="donut-card-promo">
+            <ng-template [ngSwitchCase]="'new'">NEW</ng-template>
+            <ng-template [ngSwitchCase]="'limited'">LIMITED</ng-template>
+        </span>
+    </ng-container>
+</div>

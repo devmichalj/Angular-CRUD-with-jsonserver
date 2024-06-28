@@ -1,0 +1,20 @@
+{
+  "donuts": [
+    {
+      "id": "yayq1",
+      "name": "just-chocolate1",
+      "price": 119,
+      "icon": "just-chocolate1-img",
+      "description": "For the pure chocoholic",
+      "promo": "limited"
+    },
+    {
+      "id": "yayq2",
+      "name": "just-chocolate2",
+      "price": 129,
+      "icon": "just-chocolate2-img",
+      "description": "For the pure chocoholic extra",
+      "promo": "new"
+    }
+  ]
+}

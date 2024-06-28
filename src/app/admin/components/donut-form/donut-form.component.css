@@ -1,0 +1,21 @@
+.donut-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.donut-form-error {
+  color: #e66262;
+}
+
+.donut-form-buttons button {
+  margin: 0 5px;
+}
+
+.donut-form-working {
+  font-style: italic;
+}
+
+label {
+  padding: 5px 10px;
+}
